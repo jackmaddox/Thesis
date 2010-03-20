@@ -1,0 +1,201 @@
+\chapter{Experimental Results}
+\section{Delamination}
+Prior to cycling, measurements were taken for each board as a baseline.  The baseline measurements for PSA and the alternative adhesive on FR4 boards are shown in Figure~\ref{fig:SpreadOfResistances}, where it can be seen that the alternative adhesive exhibited a larger range of thermal resistances than did the PSA.  The alternative adhesive boards ranged from 4.65 to 8.33$^{\circ}\mathrm{C/W}$ with a standard deviation of 0.95$^{\circ}\mathrm{C/W}$, while the PSA boards ranged from 5.23 to 6.35$^{\circ}\mathrm{C/W}$ with a standard deviation of 0.26$^{\circ}\mathrm{C/W}$.  This suggests a non-uniform application of the alternative adhesive during manufacture.
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=.75\textwidth]
+{Figures/spreadplotlabeled.pdf}
+\end{overpic}
+\caption{Thermal resistances of FR4 boards with PSA and an alternative adhesive prior to cycling}
+\label{fig:SpreadOfResistances}
+\end{figure}
+
+The thermal resistance of the boards while clamped is shown in Figure~\ref{fig:ThermalResistancesAllBoards}, where it can be seen that the Flex boards had a lower junction resistance than the FR4 boards. This difference in performance is mainly due to the smaller contribution of the Flex PCB to the junction resistance since the Flex is thinner than the FR4.  The configurations with the FR4 boards all had comparable performance, with the PSA boards having a slightly lower average thermal resistance than the alternative adhesive boards.  
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=.75\textwidth]
+{Figures/ThermalResistancesAllBoards.pdf}
+\end{overpic}
+\caption{Average junction resistance with cycling}
+\label{fig:ThermalResistancesAllBoards}
+\end{figure}
+
+Figure~\ref{fig:ChangeInThermalResistancesAllBoards} shows the change in the junction resistance of the boards while clamped.  In each configuration, the thermal performance improved with thermal cycling, with the exceptions to this trend falling within the measured uncertainty. This is possibly due to curing of the adhesive, which increases its thermal conductivity.  Since the PCBs were being pressed against the aluminum substrate, the changes observed are primarily due to changes in material properties, namely thermal conductivity.  Similar initial improvements in thermal performance were reported by Khuu,~et.~al.~\cite{Khuu2007}.
+\begin{figure}[t]
+\begin{flushright}
+\begin{overpic}[width=.75\textwidth]
+{Figures/ChangeInThermalResistancesAllBoards.pdf}
+\end{overpic}
+\caption{Average change in junction resistance with cycling}
+\label{fig:ChangeInThermalResistancesAllBoards}
+\end{flushright}
+\end{figure}
+
+The delamination of the PCB from the aluminum substrate causes a significant increase in the contact resistance between the board and the substrate.  Measuring the junction resistance while not pressing on the board allows for the detection of delamination.  It was found that there was no significant difference between the clamped and unclamped readings for the PSA boards after 1000 cycles, therefore it was determined that no delamination had occurred.  However, there were significant differences between the clamped and unclamped readings for the alternative adhesive boards.  
+\begin{figure}[tbp]
+ \centering
+\begin{overpic}[width=.75\textwidth]
+{Figures/ClampedVsUnclampedGraph.pdf}
+\end{overpic}
+\caption{Comparison of junction resistance for clamped and unclamped boards}
+\label{fig:ClampedVsUnclampedGraph}
+\end{figure}
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=.75\textwidth]
+{Figures/delamplotTHERFR4.pdf}
+\put(19,28.5){\scriptsize Full}
+\put(17.5,26){\scriptsize Delam.}
+\put(17.5,22){\scriptsize Partial}
+\put(17.5,19.5){\scriptsize Delam.}
+\end{overpic}
+\caption{Percent change in junction resistance of alternative adhesive boards without clamping}
+\label{fig:DelamPlotAll}
+\end{figure}
+
+While there was visible separation of the board from the aluminum substrate in some of the alternative adhesive boards, the only indication of delamination in others was the increase in the junction resistance.  The boards were separated into three categories: no delamination, partial delamination, and full delamination.  A board was considered to have partial delamination if the unclamped junction resistance was 25\% greater than the clamped junction resistance or full delamination if it was 50\% greater.  Typical results for the alternative adhesive boards showing no delamination, partial delamination, and full delamination are shown in Figure \ref{fig:ClampedVsUnclampedGraph}, and the percent difference between the clamped and unclampled configurations for each of the alternative adhesive boards is shown in Figure \ref{fig:DelamPlotAll}.  Using this criterion resulted in partial delamination being present at five locations and full delamination at 12 locations in the alternative adhesive boards after 1000 cycles, while there was no delamination present in the PSA boards, as shown in Figure~\ref{fig:BarPlotPercent}.  This supports the findings of Eyman,~et.~al.~\cite{Eyman1997}, who reported no failures in PSA attached heat sinks until around 8,000 cycles, where as a heat cured epoxy started failing at around 300 cycles.
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=.75\textwidth]
+{Figures/barplotpercent.pdf}
+\put(18,54){\scriptsize ALT FR4:}
+\put(32,54){\scriptsize 35 locations on 17 boards}
+\put(18,50){\scriptsize PSA FR4:}
+\put(32,50){\scriptsize 18 locations on 9 boards}
+\put(18,46){\scriptsize PSA FLEX:}
+\put(32,46){\scriptsize 18 locations on 10 boards}
+\end{overpic}
+\caption{Percentage of locations where delamination has occured}
+\label{fig:BarPlotPercent}
+\end{figure}
+
+The overmolded boards showed an improvement in performance, while clamped, similar to the non-overmolded boards.  There was an intial increase in the juction resistance for both types of overmolding, however this increase was within the measured uncertainty.
+
+The overmolded boards did not show signs of delamination.  However, due to the way they  are constructed, it is not possible to hold them in the fixture without applying downward pressure on the circuit board.  Because of this, the presence of delamination cannot be conclusively determined using the current method.  It was seen that overmolding A exhibited cracks after 250 cycles as shown in Figure~\ref{fig:Cracking}, while overmolding B showed no cracks after 1000 cycles.  
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=.9\textwidth]
+{Figures/Overmolded500CyclesLabeled.pdf}
+\end{overpic}
+\caption{Cracking of overmolding A after 250 cycles}
+\label{fig:Cracking}
+\end{figure}
+
+
+\section{Volume Fraction}
+The volume fraction of the alumina was determined by taking the average of 20 samples.  The samples were taken from four stratified layers, with five samples per layer, as shown in Figure \ref{fig:Map}.
+
+Since the particles of alumina were heterogeneous in both size and shape, there was significant variation in the volume fraction by location.  This variation occurred in both the axial and radial directions.  Small alumina particles settled amongst the larger particles near the bottom of the cast block.  Near the top of the cast block, only large particles were present, so the compound was proportionally more epoxy.  Due to this, the volume fraction tended to decrease with increasing axial height.  However, there was also some radial variation, i.e. two locations at the same stratum had different volume fractions of alumina, as illustrated in Figure \ref{fig:VolumeFractionComparison}.  Therefore, in general, the volume fraction varied unpredictably by location.  The results of combining the measurements from the 20 locations are summarized in Table \ref{tab:VolumeFraction}.
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.95\textwidth]
+{Figures/Volume-Fraction-Comparison.pdf}
+\put(-1,30){(a)}
+\put(50.5,30){(b)}
+\end{overpic}
+\caption{Micrographs illustrating the variation in volume fraction of alumina by location, where (a) came from location C-3 and (b) came from location C-5.}
+\label{fig:VolumeFractionComparison}
+\end{figure}
+\begin{table}[htbp]
+ \centering
+\caption{Volume fraction of alumina calculated using images taken from 20 locations.}
+\begin{tabular}{lc}
+\toprule
+ & Volume Fraction of Alumina (\%) \\
+\midrule
+Mean & 74 \\
+\(\sigma\) & 4 \\
+Maximum & 69 \\
+Minimum & 83 \\
+\bottomrule
+\end{tabular}
+\label{tab:VolumeFraction}
+\end{table}
+
+\section{Specific Heat}
+The specific heat of the material was found by measuring 20 samples, five radially spaced samples from four axial locations.  Each sample was cut into the shape of a disc with a thickness of 1 mm and a diameter of 5 mm.  
+
+The samples were first tested in ramp mode and then in scanning mode.  The results of the scanning mode test showed a significant departure from the results of the ramp mode test.  In the first ramp mode test, as shown by the red line in Figure \ref{fig:SpecificHeatTemporalChange}, the specific heat increases between 20 and 60\(^{\circ}\mathrm{C}\), decreases drastically between 60 and 80\(^{\circ}\mathrm{C}\), and then increases again between 80 and 135\(^{\circ}\mathrm{C}\).  However, as shown by the red dots in Figure \ref{fig:SpecificHeatTemporalChange}, the first scanning mode test shows a steady increase in thermal conductivity with temperature over the entire temperature range.  The trend seen in the scanning mode test is more representative of what was expected for this material.  Because of this discrepancy, the samples were tested in both modes a second time, shown in blue in Figure \ref{fig:SpecificHeatTemporalChange}.  The second set of tests showed consistent readings for both modes.  This suggests there was a residual chemical reaction which occurred when the sample was heated during the first tests and that the reaction had completed by the time the second tests were run.
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.75\textwidth]
+{Figures/Specific-Heat-Temporal-Change.png}
+\end{overpic}
+\caption{Specific heat of a single sample measured four times with a DSC, twice in ramp mode and twice in scan mode.}
+\label{fig:SpecificHeatTemporalChange}
+\end{figure}
+
+The specific heat was found to vary unpredictably with both axial and radial location.  For example, as seen in Figure \ref{fig:SpecificHeatSpatialVariation}, at a given axial height, the sample taken from a outer radial location, C-2, and an inner radial location, C-5, yielded values that were lower than that of an intermediate sample, C-4.  The values for the specific heat ranged from 0.86-1.14 \(\mathrm{J/g\cdot K}\) at 25°C and 1.07-1.37 \(\mathrm{J/g\cdot K}\) at 125°C.
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.75\textwidth]
+{Figures/Specific-Heat-Spatial-Variation.png}
+\end{overpic}
+\caption{Typical specific heat values for different locations.}
+\label{fig:SpecificHeatSpatialVariation}
+\end{figure}
+
+\section{Thermal Conductivity}
+The thermal conductivity was measured using three samples of varying thicknesses.  However, after completing the measurements, it was observed that the samples being tested had changed color, which suggests that they continued to cure during the test.  As seen in Figure \ref{fig:CuringDuringTest}, the bottom surface, which was in contact with the hot metering block, was much darker than the top surface, which was in contact with the cold metering block.  This color change is better illustrated by Figure \ref{fig:CuringDuringTest}(b) where it can be seen that the color gradient follows the imposed temperature gradient of dark to light and hot to cold respectively.  Although not shown in these images, the color of the material prior to the conductivity test was closer to that of Figure \ref{fig:CuringDuringTest}(c) than Figure \ref{fig:CuringDuringTest}(a).
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=1\textwidth]
+{Figures/Curing-During-Test.png}
+\put(0,26){(a)}
+\put(33.5,26){(b)}
+\put(67.5,26){(c)}
+\end{overpic}
+\caption{Images of sample after performing a conductivity test, where (a) is the bottom, (b) is the side, and (c) is the top. (Note: the scale is in inches).}
+\label{fig:CuringDuringTest}
+\end{figure}
+
+The method used to determine the apparent thermal conductivity of the sample is dependent upon the system being at a steady state.  Therefore, it is not possible to reliably determine the apparent conductivity of the material if the properties of the material are changing during the test, which in this case they appeared to be.  Not only did the material appear to change during the test, but it also appeared to change non-uniformly, i.e. the top and bottom of the sample may not have the same properties since they appeared to have cured different amounts.  
+
+Since the discrepancies in the specific heat measurements appeared to be resolved by keeping the samples heated for an extended period of time, a similar process was taken to ensure that any residual chemical reactions were completed prior to re-measuring the thermal conductivity.  Portions of the material were placed in a chamber at 125\(^{\circ}\mathrm{C}\) and checked periodically for changes.  The changes that were observed are illustrated in Figure \ref{fig:CuringComparison}.  The exterior surfaces that were exposed to the air in the chamber became increasingly darker over time.  However, the interior, shown by the cross-sections in the figure, continued to get lighter over time.  The difference in the interior and exterior color is illustrated in Figure \ref{fig:CuringMicrographs}, where it can be seen that the darkening of the exterior surface only extends approximately 2 mm deep.  The slit, shown in Figure \ref{fig:CuringMicrographs}, was cut prior to placing the material in the chamber, and inspection of the discoloration along its surface shows that the darkening of the exterior occurs wherever the material is exposed to air.     
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=.95\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.95\textwidth]
+{Figures/Curing-Comparison.png}
+\put(8.5,0.75){Baseline}
+\put(32.5,0.75){3 Days}
+\put(69,0.75){2 Weeks}
+\end{overpic}
+\caption{Changes in the material after being exposed exposed to $125^{\circ}\mathrm{C}$ for the given time, where at 3 days and 2 weeks the darker surfaces are the exterior color and the lighter surfaces are cross sections to show the interior color.}
+\label{fig:CuringComparison}
+\end{figure}
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.95\textwidth]
+{Figures/Micrographs.png}
+\put(-1,30){(a)}
+\put(50.5,30){(b)}
+\end{overpic}
+\caption{Micrographs showing the surface effects which occured after being held at 125$^{\circ}\mathrm{C}$ for 2 weeks.}
+\label{fig:CuringMicrographs}
+\end{figure}
+
+A section of the material was placed in a chamber at \(125^{\circ}\mathrm{C}\) and monitored for changes in color and changes in mass until it reached a steady state.  Three samples, with thickniesses of 7.3 mm, 15.7 mm, and 19.6 mm were then cut from this section to perform the thermal conductivity tests.  They were tested with mean sample temperatures of 25, 75, and \(100^{\circ}\mathrm{C}\).  The apparent thermal conductivities at these temperatures are shown in Table \ref{tab:ApparentThermalConductivity}.
+\begin{table}[htbp]
+ \centering
+\caption{Apparent thermal conductivity values measured at given temperatures.}
+\begin{tabular}{cc}
+\toprule
+Temperature \( (^{\circ}\mathrm{C})\) & \(\lambda\:\mathrm{(W/m\cdot K)}\) \\
+\midrule
+25 & 1.96 \\
+75 & 2.85\\
+100 & 3.17\\
+\bottomrule
+\end{tabular}
+\label{tab:ApparentThermalConductivity}
+\end{table}
+
+It should be noted that this method assumes the thermal conductivity to be the same for each sample.  However, it is expected that the thermal conductivity will vary with the volume fraction, particle size, and number of particles of alumina.  Since the volume fraction was found to vary by location, and therefore by sample, it is not possible to determine the local thermal conductivity of a specific sample.  Rather, the values reported represent the average apparent thermal conductivity of the three samples tested.  
+
+

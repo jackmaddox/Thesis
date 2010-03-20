@@ -1,0 +1,201 @@
+\chapter{Experimental Methodology}
+
+
+\section{Delamination}
+A fixture was constructed to measure the temperature at the top and bottom of a package while a fixed amount of heat is generated on the top of the PCB.  A composite thermal resistance can be calculated from the temperature drop across the PCB, TIM, and aluminum substrate.  
+\begin{equation}
+R_{jx}=\frac{T_j-T_x}{P}=\frac{\Delta T_{jx}}{P}
+\label{eqn:JunctionResistance}
+\end{equation}
+The resulting junction resistance can then be used to determine whether the PCB has delaminated from the aluminum substrate.
+
+An operational schematic of the fixture used is shown in Figure~\ref{fig:Diagram}.  The aluminum substrate sits on top of a rubber gasket.  The top of the fixture can be used to secure the sample in two ways. In the clamped configuration, the top of the fixture presses the PCB against the aluminum substrate, which is pressed against the bottom rubber gasket; this configuration is shown in Figure~\ref{fig:ClampedVsUnClamped} parts (a) and (b).  In the unclamped configuration, the top of the fixture presses against only the aluminum substrate and the PCB is allowed to remain free, this configuration is shown in Figure~\ref{fig:ClampedVsUnClamped} parts (c) and (d).  In each method, the top of the fixture is secured to the bottom of the fixture by four screws, each tightened to 25 ft-lbs.\ of torque.  
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=.9\textwidth]
+{Figures/Delamination-Apparatus-Diagram.pdf}
+\put(37,19){\large Thermocouples}
+\put(40,15){\large (Reference)}
+\put(40,55){\large Thermistors }
+\put(42,51){\large (Junction)}
+\put(90, 49){\large PCB}
+\put(-2,53){\large Aluminum}
+\put(-1,49){\large Substrate}
+\put(58,5){\large Fluid}
+\put(58.5,1){\large Inlet}
+\put(94,38){\large Fluid}
+\put(93,34){\large Outlet}
+\end{overpic}
+\caption{Fixture for measuring the junction resistance of a circuit board attached to an aluminum backing.}
+\label{fig:Diagram}
+
+\end{figure}
+\begin{figure}[htbp]
+ \centering
+\begin{overpic}[width=0.9\textwidth]
+{Figures/ClampedVsUnclamped.pdf}
+\end{overpic}
+\caption{(a) Clamped configuration (b) Detail view of clamped configuration (c) Unclamped configuration  (d) Detail view of unclamped configuration}
+\label{fig:ClampedVsUnClamped}
+\end{figure}
+
+
+Once the package has been mounted in the fixture, ethylene glycol is impinged on the back of the aluminum substrate.  The temperature of the ethylene glycol is maintained at approximately 22$^{\circ}\mathrm{C}$ by an automated chiller.   A thermocouple is used to monitor the temperature of the fluid, $T_x$, and a thermistor, mounted on the PCB, is used to measure the temperature at the top of the board, $T_j$.  Four resistance heaters are used to generate a fixed amount of heat on the top surface of the board.  The fixture is then sufficiently insulated so as to force heat from the resistors to move through the board and into the fluid on the backside of the metal plate.
+
+Temperature readings were taken once the system reached steady state while generating 0, 0.5, 1.0, 1.5, and 2.0 Watts with the resistance heaters.  Steady state was determined to have occurred when the temperature changed less than 0.01$^{\circ}\mathrm{C}$ for 25 readings, or approximately five minutes. The temperature difference between the thermistor on the circuit board and the thermocouple in the fluid was then used to determine the junction resistance using a linear regression fit to the power data with an uncertainty of 0.25$^{\circ}\mathrm{C}/$W.  A sample set of measurements for is shown in Figure~\ref{fig:TypicalThermalResistanceMeasurement}.
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=0.75\textwidth]
+{Figures/TempDropPlot.pdf}
+\end{overpic}
+\caption{Typical thermal resistance data}
+ \label{fig:TypicalThermalResistanceMeasurement}
+\end{figure}
+
+The junction resistance is primarily a function of the thermal conductivities of the PCB, adhesive, and substrate and the contact areas of the PCB/adhesive and adhesive/substrate interfaces.  Thermal cycling causes a decrease in the contact area, due to delamination, which increases the junction resistance.  It also causes an increase in thermal conductivity, due to curing, which decreases the junction resistance.  In order to isolate the influence of these competing effects, the boards were tested in both the clamped and unclamped configurations.  The measurements obtained, with the boards unclamped, include the effects of both the delamination and the change in thermal conductivity.  However, the measurements obtained, with the boards clamped, primarily show the effects of the change in thermal conductivity of the adhesive.  Therefore, the degree of delamination that has occured can be determined by comparing the junction resistance of the unclamped boards to those of the clamped boards.  
+%Pressing the PCB against the aluminum substrate isolated the contribution of the thermal conductivity of the adhesive, while allowing the board to remain free showed the effects of delamination on the thermal resistance of the system.
+
+A large roughly cylindrical block, nominally 200 mm in diameter and 100 mm in height, of the potting compound was cast by the vendor to be representative of the final product as it would appear in a packaged device.  Samples were taken from various locations throughout: near the top, bottom, sides and middle, as illustrated in Figure \ref{fig:Map}.  The sectioning was done using a high-speed rotary diamond saw.  
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.75\textwidth]
+{Figures/Map.pdf}
+\end{overpic}
+\caption{Schematic representation of an alumina/epoxy cast block and the location from which samples were taken to determine the properties of the material.}
+\label{fig:Map}
+\end{figure}
+
+\section{Test Matrix}
+This study was conducted on 5 different configurations of board, adhesive, and overmolding.  Each board had the standardized layout shown in Figure~\ref{fig:Layout}, with two test locations per board.  Each test location consisted of a thermistor with four resistance heaters.  The resistance heaters were arranged in a square to simulate the presence of a heat producing integrated circuit. The configurations tested are listed in Table~\ref{tab:TestMatrix} and sample boards are shown in Figure \ref{fig:Boards}.  The PCBs were attached to the aluminum substrate by the vendors.
+\begin{figure}[t]
+ \centering
+\begin{overpic}[width=.75\textwidth]
+{Figures/Layout.pdf}
+\put(-14,66){\small Resistance}
+\put(-11,60){\small Heaters}
+\put(101,23){\small Thermistor}
+\put(101,17){\small (Junction)}
+\end{overpic}
+\caption{Circuit layout for test vehicle}
+\label{fig:Layout}
+\end{figure}
+
+\begin{table}[t]
+\caption{Board configurations tested}
+\label{tab:TestMatrix}
+\vspace{4pt}
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+\# of Boards & PCB & Adhesive & Overmolding\\ \midrule
+10 & Flex & PSA & \\
+9 & FR4 & PSA & \\
+17 & FR4 & ALT & \\
+4 & FR4 & PSA & A\\
+5 & FR4 & PSA & B\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[htbp]
+ \centering
+\begin{overpic}[height=.9\textheight]
+{Figures/Boards.pdf}
+\end{overpic}
+\caption{Aluminum substrate attached to (a) Flex PCB, (b) FR4 PCB, and (c) FR4 PCB with overmolding.}
+\label{fig:Boards}
+\end{figure}
+
+
+\section{Volume Fraction}
+The volume fraction of epoxy present in the sample was determined through the use of optical microscopy and image processing.  Micrographs were taken of locations near the top, bottom, and middle of the block.
+
+The images were processed by using a threshold tool to convert the color image to a black and white image with the epoxy regions being black and the alumina regions being white, as shown in Figure \ref{fig:ThresholdExample}.  The white pixels were counted and compared to the total number of pixels in the image to determine the percentage of the image occupied by the alumina.  
+\begin{equation}
+\mathrm{Volume\,Fraction_{alumina}}=\mathrm{\frac{Pixels_{alumina}}{Pixels_{total}}}
+\label{eqn:VolumeFraction}
+\end{equation}
+This was repeated for multiple samples and an average was taken to find the volume fraction of the epoxy.
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=.75\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.95\textwidth]
+{Figures/Threshold-Example.png}
+\put(-1,30){(a)}
+\put(50.5,30){(b)}
+\end{overpic}
+\caption{Image used to determine the volume fraction of epoxy, where (a) is the original image and (b) is the image after the threshold tool has been used to distinguish between the epoxy region and the alumina region.}
+\label{fig:ThresholdExample}
+\end{figure}
+
+\section{Specific Heat}
+he specific heat was measured using a Digital Scanning Calorimeter (DSC)\nomenclature[ADSC]{DSC}{differential scanning calorimeter}.  A DSC works by keeping the sample being measured at approximately the same temperature as a known reference material.  The difference in the amount of heat needed to maintain the sample and the reference material at the same temperature is used in conjunction with the known properties of the reference material to calculate the specific heat of the sample being measured.
+
+The DSC can be used in two modes, ramp mode and scanning mode.  In ramp mode, a constant amount of heat is applied to both the sample and the reference material so that the temperature rise of the reference material is approximately linear.  The sample and the reference material are brought from room temperature to the target high end temperature and then cooled to the target low end temperature.  During this process, the temperature of the sample is recorded and combined with the known amount of heat being applied to the sample to generate a curve of the specific heat over the given temperature range. 
+
+In scanning mode, the sample and the reference material are first brought to a target temperature.  The sample and reference material are then repeatedly heated and cooled so that their temperatures oscillate around the target temperature.  The difference in heat required to keep the sample and the reference material at the same temperature is recorded and used to calculate the specific heat of the sample at the target temperature.  This process is repeated at multiple temperatures to find points that can be used to generate a curve.  While scanning mode has the advantage of being more accurate at a given temperature, it has the disadvantage of not being a continuous measurement for all temperatures within a given temperature range.
+
+\section{Thermal Conductivity}
+The thermal conductivity was measured using a guarded heater method based on the ASTM D5470-06 \cite{ASTM-D54702006}.  The apparatus, shown in Figure 3, consists of two metering blocks, each with five thermocouples spaced 1 cm apart.  The sample being measured is placed between the two metering blocks.  A temperature gradient is imposed across the metering blocks and the sample.  The temperature readings from the thermocouples are used to determine the heat flow through and the temperature drop across the sample.  An apparent thermal conductivity can then be calculated for the sample material.  
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=.9\textwidth]
+{Figures/Belljar.pdf}
+\end{overpic}
+\caption{Guarded heater apparatus used to measure thermal conductivity.}
+\label{fig:Belljar}
+\end{figure}
+
+The metering blocks were constructed from aluminum alloy 2024-T3.  There are four resistance heaters, two rows of two, embedded below the thermocouples in the bottom metering block.  A liquid cooled heat sink is mounted above the top metering block.  
+
+The thermal conductivity of the metering blocks, \(k_{mb}\)\nomenclature[Ekmb]{\(k_{mb}\)}{thermal conductivity of metering block, \(\mathrm{W/m\cdot K}\)}, was determined by using two DC power supplies to power the heaters.  The upper row of heaters heated the metering blocks while the lower row acted as guard heaters.  The temperature of each row of heaters was monitored by a Resistance Temperature Detector (RTD)\nomenclature[ARTD]{RTD}{resistance temperature detector} embedded between the heaters. The power levels were then adjusted so that there was no temperature difference between the two rows of heaters.  The heat flowing through the metering blocks was calculated from the electrical power generated by the top row of heaters.  A least squares fit of the temperatures in the metering block was used to determine the thermal conductivity of the metering block material to be \(k_{mb}=133\:\mathrm{W/m\cdot K}\).  Further details of the calibration process can be found in Elkady \cite{Elkady2005}.
+
+A pneumatic piston is used to apply a constant force of  1925 N (435 lbs.), to the sample during the test, which corresponds to a pressure of 3 MPa (435 psi).  This is necessary because it will be assumed that the thermal interface resistance between the sample and the metering blocks will be constant between tests.  
+
+A thermal interface material (TIM)\nomenclature[ATIM]{TIM}{thermal interface material} is placed between the sample and each of the clamping surfaces.  This helps to minimize the interface resistance between the sample and the metering block, but more importantly it helps to keep the interface resistance constant between samples.  The TIM chosen was Sil-Pad\textregistered ~800 with a thickness of 5 mil (0.127 mm) and a manufacturer reported thermal conductivity of \(1.6\:\mathrm{W/m\cdot K}\).  The contact resistances on either side of the TIM and the conductive resistance of the TIM will be combined into a single term, \(R_{int}\)\nomenclature[ERint]{\(R_{int}\)}{bulk thermal resistance between sample and metering block, \(\mathrm{W/m\cdot K}\)}, and will be assumed to be constant.
+The heat, generated below the bottom metering block, is removed by a serpentine liquid cooled heat sink mounted above the top metering block.  The temperature of the inlet water to the heat sink is controlled by an external chiller.  
+
+The amount of heat flowing through the metering blocks is controlled by adjusting the power supplied to the heaters, which in turn controls the temperature drop across the sample.  The temperature of the top metering block is controlled by adjusting the temperature of the inlet water to the heat sink, which in turn controls the mean temperature of the sample.  By adjusting the power supplied to the heaters and the temperature of the water supplied to the heat sink, the apparatus can be used to measure the apparent thermal conductivity of a material over a range of temperatures.
+
+To test a sample, it is clamped between the metering blocks, with a layer of TIM on each side.  The heaters are powered and the temperature of the inlet water is adjusted so the mean temperature of the sample is at the desired temperature.  The system is assumed to be at steady state when the temperature readings have been stable for at least 60 minutes.
+
+A least squares fit of the thermocouple readings is extrapolated to find the temperature at each of the clamping surfaces, as illustrated in Figure \ref{fig:BellJarDiagram}.  The slope of the least squares fit is also used, in conjunction with the known thermal conductivity of the metering blocks, to find the heat flux through each of the metering blocks.  
+\begin{gather}
+\dot{q}_{bot}''=-k_{mb}\frac{\partial T}{\partial x}\big|_{bot}\\
+\dot{q}_{top}''=-k_{mb}\frac{\partial T}{\partial x}\big|_{top}
+\end{gather}\nomenclature[Eq]{\(\dot{q}_s''\)}{heat flux, heat-transfer per unit area, at surface , \(\mathrm{W/m^2}\)}
+The average of the heat flux through the metering blocks is taken to be the heat flux through the sample.
+\begin{equation}
+\dot{q}''=\frac{\dot{q}_{bot}''+\dot{q}_{top}''}{2}
+\label{eqn:AverageHeatFlux}
+\end{equation}
+\begin{figure}[htbp]
+ \centering
+%\begin{overpic}[width=1\textwidth,grid,tics=10] % to see a grid, uncomment this line
+\begin{overpic}[width=1\textwidth]
+{Figures/BellJarDiagram.pdf}
+\end{overpic}
+\caption{Thermocouple reading are extrapolated to determine the temperature at the clamping surface and the heat flowing through the sample.}
+\label{fig:BellJarDiagram}
+\end{figure}
+
+Multiple samples of varying thicknesses are tested, and it is assumed that \(\lambda\)\nomenclature[Glambda]{\(\lambda\)}{apparent thermal conductivity, \(\mathrm{W/m\cdot K}\)} and \(R_{int}\) are constant between tests.  The apparent thermal conductivity can then be obtained from the least squares solution to the following equation:
+\begin{equation}
+\left[ \begin{array}{cc}
+2 & L_1\\
+\vdots & \vdots\\
+2 & L_i
+\end{array} \right]
+\cdot
+\left[ \begin{array}{c}
+R_{int} \\  L_i
+\end{array} \right] = 
+\left[ \begin{array}{c}
+\Delta T_1/\dot{q}_1'' \\ \vdots \\ \Delta T_i/\dot{q}_i''
+\end{array} \right]
+\label{eqn:LeastSquaresRintAndLambda}
+\end{equation}
+\nomenclature[Sbot]{\(bot\)}{bottom metering block}\nomenclature[Stop]{\(top\)}{top metering block}\nomenclature[EL]{\(L\)}{distance between metering blocks, \(\mathrm{m}\)}\nomenclature[GDeltaT]{\(\Delta T\)}{temperature drop between metering blocks, \(\mathrm{K}\)}

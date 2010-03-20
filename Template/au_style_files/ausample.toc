@@ -1,0 +1,12 @@
+\contentsline {chapter}{Abstract}{ii}
+\contentsline {chapter}{Acknowledgments}{iii}
+\contentsline {chapter}{List of Illustrations}{v}
+\contentsline {chapter}{List of Tables}{vi}
+\contentsline {chapter}{List of Abbreviations}{vii}
+\contentsline {chapter}{\numberline {1}This is the Title of the First Chapter}{1}
+\contentsline {section}{\numberline {1.1}This is an example of a section heading}{1}
+\contentsline {subsection}{\numberline {1.1.1}This is a subsection heading}{2}
+\contentsline {chapter}{\numberline {2}New Chapter}{3}
+\contentsline {chapter}{Bibliography}{4}
+\contentsline {chapter}{Appendices}{5}
+\contentsline {chapter}{\numberline {A}Notes on the style-file project}{6}

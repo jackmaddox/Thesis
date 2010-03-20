@@ -1,0 +1,124 @@
+\documentclass[12pt]{report}
+
+
+%%%%%%% Packages From Official Template %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{aums} % Auburn Masters Style
+\usepackage{ulem} % underlining on style-page; see \normalem below
+\usepackage{url}
+
+%%%%%%% Draft Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{aums-draft} % Draft version of Auburn Masters Style (includes Revision #)
+\rhead{Draft - Version 1}
+
+%%%%%%% Additional (Unofficial) Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% These can probably be commented if you recieve an error like ``File 'package.sty' not found.''
+\synctex=1 % allow reverse searching (clicking on the pdf moves the cursor to the corresponding line in the tex file - Note: this require a compatible pdf viewer i.e. Okular on Linux or Skim on Mac OSX)
+\usepackage{amsmath} % Additional math environments (i.e. align and gather)
+\usepackage{amssymb} % Additional math symbols
+\usepackage{bm} % Defines \bm{} to use bold math fonts
+\usepackage{booktabs} % Newer table environment (use \toprule, \midrule, bottomrule)
+\usepackage[bf]{caption} % Customize Table and Figure Captions.  Possible options: normal, hang, isu, center, centerlast, nooneline, scriptsize, \ldots, Large, up, it, sl, sc, md, bf, rm, sf, tt, ruled
+\usepackage{enumerate} % enumerate environment (extended version of itemize)
+\usepackage{flafter} % Don't place floats before their definition
+\usepackage{graphicx} % Add graphics capabilities for pdf, jpg, png, or tif
+\usepackage{graphics} % Add graphics capabilities for eps
+\usepackage[pdftex,bookmarks,colorlinks,breaklinks]{hyperref} % allow pdf hyperlinking
+\hypersetup{linkcolor=black,citecolor=black,filecolor=black,urlcolor=black} % black links for printed output
+\usepackage{overpic} % An environment for including graphics which allows addition text to overlayed across the image
+\usepackage{sagetex} % Allow sage caluclation to be run from the latex document. See http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html for details
+
+%%%%%%% Custom Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define how symbols for vectors should be formatted.  By using this syntax it is easy to change the appearance of all the vectors by changing the setting here
+\renewcommand{\vec}[1]{\bm{#1}}
+\newcommand{\uvec}[1]{\bm{#1}}
+
+%%%%%%% Format Rules %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Normal margins are 1 in. If you need to print with 1.5in margins, uncomment the line below
+%\oddsidemargin0.5in \textwidth6in
+
+%%%%%%% List of Abbreviations (Nomenclature) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[intoc]{nomencl}
+\renewcommand{\nomname}{List of Abbreviations}   	       
+\RequirePackage{ifthen}
+ \renewcommand{\nomgroup}[1]{%
+\ifthenelse{\equal{#1}{A}}{\item[\textbf{Acronyms}]}{%
+\ifthenelse{\equal{#1}{E}}{\item[\textbf{English letter symbols}]}{%
+\ifthenelse{\equal{#1}{G}}{\item[\textbf{Greek letter symbols}]}{%
+\ifthenelse{\equal{#1}{P}}{\item[\textbf{Superscripts}]}{%
+\ifthenelse{\equal{#1}{S}}{\item[\textbf{Subscripts}]}{}}}}}}
+
+
+
+\makenomenclature 
+%% don't forget to run:   makeindex ausample.nlo -s nomencl.ist -o ausample.nls
+
+%%%%%%% title, author, and date %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Thermal Performance of Laminate-to-Aluminum Attachment Materials and Non-Uniform Thermal Properties of an Alumina Granule/Epoxy Potting Compound}
+\author{John Franklin Maddox, Jr.} 
+\date{May 10, 2010} %date of graduation
+\year{2010} %copyright year
+
+%%%%%%% Keywords %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\keywords{thermal conducivity, delamination, thermal adhesive, pressure sensitive adhesive, epoxy, alumina granules}
+
+%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Put the Thesis Adviser here. 
+\adviser{Sushil H. Bhavnani and Roy W. Knight}
+
+% Put the committee here (including the adviser), one \professor for each. 
+% The advisor must be first, and the dean of the graduate school must be last.
+\professor{Sushil H.\ Bhavnani, Co-Chair, Professor of Mechanical Engineering}
+
+\professor{Roy W.\  Knight, Co-Chair, Professor of Mechanical Engineering}
+
+\professor{Jeyhoon M.\ Khodadadi, Professor of Mechanical Engineering}
+
+\begin{document}
+
+\begin{romanpages} % roman-numbered pages 
+
+\TitlePage 
+
+%%%%%%% Abstract %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract} 
+\input{Chapters/Abstract.tex}
+\end{abstract}
+
+%%%%%%% Acknowledgements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{acknowledgments}
+The work was supported by the NSF Center for Advanced Vehicle and Extreme Environment Electronics (CAVE3).
+\end{acknowledgments}
+
+%%%%%%% Table of Contents, List of Figures, List of Tables %%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\listoffigures
+\listoftables
+
+%%%%%%% Nomenclature %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printnomenclature[0.5in] %used for the List of Abbreviations
+\end{romanpages}        % All done with roman-numbered pages
+
+%%%%%%% Make italics the default for \em %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\normalem
+
+%%%%%%% Chapters %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapters/Chapter1-Introduction.tex}
+\input{Chapters/Chapter2-Background.tex}
+\input{Chapters/Chapter3-Experimental_Methodology.tex}
+\input{Chapters/Chapter4-Experimental_Results.tex}
+\input{Chapters/Chapter5-Conclusion.tex}
+%\input{Chapters/Chapter6.tex}
+
+
+
+%%%%%%% Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{ieeetr}
+\bibliography{Thesis}
+
+%%%%%%% Appenices %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\chapter*{Appendices\addcontentsline{toc}{chapter}{Appendices}}
+%\input{Appendix1}
+
+\end{document}
+

@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Arch Linux)
+The top-level auxiliary file: thesis.aux
+The style file: ieeetr.bst
+Database file #1: Thesis.bib
+Warning--I didn't find a database entry for "Mamunya:2002"
+Warning--there's a number but no series in Khuu2007
+Warning--there's a number but no series in Knight2007
+Warning--empty year in ASTM-D54702006
+You've used 24 entries,
+            1876 wiz_defined-function locations,
+            647 strings with 8101 characters,
+and the built_in function-call counts, 7340 in all, are:
+= -- 738
+> -- 250
+< -- 0
++ -- 93
+- -- 69
+* -- 530
+:= -- 1000
+add.period$ -- 26
+call.type$ -- 24
+change.case$ -- 22
+chr.to.int$ -- 0
+cite$ -- 27
+duplicate$ -- 378
+empty$ -- 674
+format.name$ -- 69
+if$ -- 1835
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 24
+newline$ -- 77
+num.names$ -- 24
+pop$ -- 58
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 310
+stack$ -- 0
+substring$ -- 571
+swap$ -- 186
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 64
+width$ -- 26
+write$ -- 237
+(There were 4 warnings)

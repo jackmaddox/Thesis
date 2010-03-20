@@ -1,0 +1,37 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{DSC}]\begingroup differential scanning calorimeter\nomeqref {3.2}
+		\nompageref{10}
+  \item [{RTD}]\begingroup resistance temperature detector\nomeqref {3.2}
+		\nompageref{14}
+  \item [{TIM}]\begingroup thermal interface material\nomeqref {3.2}
+		\nompageref{15}
+
+ \nomgroup{E}
+
+  \item [{\(k_{mb}\)}]\begingroup thermal conductivity of metering block, \(\mathrm{W/m\cdot K}\)\nomeqref {3.2}
+		\nompageref{13}
+  \item [{\(L\)}]\begingroup distance between metering blocks, \(\mathrm{m}\)\nomeqref {3.6}
+		\nompageref{17}
+  \item [{\(\dot{q}_s''\)}]\begingroup heat flux, heat-transfer per unit area, at surface , \(\mathrm{W/m^2}\)\nomeqref {3.4}
+		\nompageref{16}
+  \item [{\(R_{int}\)}]\begingroup bulk thermal resistance between sample and metering block, \(\mathrm{W/m\cdot K}\)\nomeqref {3.2}
+		\nompageref{15}
+
+ \nomgroup{G}
+
+  \item [{\(\Delta T\)}]\begingroup temperature drop between metering blocks, \(\mathrm{K}\)\nomeqref {3.6}
+		\nompageref{17}
+  \item [{\(\lambda\)}]\begingroup apparent thermal conductivity, \(\mathrm{W/m\cdot K}\)\nomeqref {3.5}
+		\nompageref{16}
+
+ \nomgroup{S}
+
+  \item [{\(bot\)}]\begingroup bottom metering block\nomeqref {3.6}
+		\nompageref{17}
+  \item [{\(top\)}]\begingroup top metering block\nomeqref {3.6}
+		\nompageref{17}
+
+\end{thenomenclature}

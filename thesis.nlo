@@ -1,0 +1,11 @@
+\nomenclatureentry{ADSCDSC@[{DSC}]\begingroup differential scanning calorimeter\nomeqref {3.2}|nompageref}{10}
+\nomenclatureentry{Ekmb\(k_{mb}\)@[{\(k_{mb}\)}]\begingroup thermal conductivity of metering block, \(\mathrm{W/m\cdot K}\)\nomeqref {3.2}|nompageref}{13}
+\nomenclatureentry{ARTDRTD@[{RTD}]\begingroup resistance temperature detector\nomeqref {3.2}|nompageref}{14}
+\nomenclatureentry{ATIMTIM@[{TIM}]\begingroup thermal interface material\nomeqref {3.2}|nompageref}{15}
+\nomenclatureentry{ERint\(R_{int}\)@[{\(R_{int}\)}]\begingroup bulk thermal resistance between sample and metering block, \(\mathrm{W/m\cdot K}\)\nomeqref {3.2}|nompageref}{15}
+\nomenclatureentry{Eq\(\dot{q}_s''\)@[{\(\dot{q}_s''\)}]\begingroup heat flux, heat-transfer per unit area, at surface , \(\mathrm{W/m^2}\)\nomeqref {3.4}|nompageref}{16}
+\nomenclatureentry{Glambda\(\lambda\)@[{\(\lambda\)}]\begingroup apparent thermal conductivity, \(\mathrm{W/m\cdot K}\)\nomeqref {3.5}|nompageref}{16}
+\nomenclatureentry{Sbot\(bot\)@[{\(bot\)}]\begingroup bottom metering block\nomeqref {3.6}|nompageref}{17}
+\nomenclatureentry{Stop\(top\)@[{\(top\)}]\begingroup top metering block\nomeqref {3.6}|nompageref}{17}
+\nomenclatureentry{EL\(L\)@[{\(L\)}]\begingroup distance between metering blocks, \(\mathrm{m}\)\nomeqref {3.6}|nompageref}{17}
+\nomenclatureentry{GDeltaT\(\Delta T\)@[{\(\Delta T\)}]\begingroup temperature drop between metering blocks, \(\mathrm{K}\)\nomeqref {3.6}|nompageref}{17}
